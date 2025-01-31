@@ -21,6 +21,7 @@
               colors: {
                 clifford: '#da373d',
                 'cmn-color-1': '#179800',
+                'cmn-color-2': '#111111',
               }
             }
           }
@@ -30,62 +31,96 @@
         .sora-cmn-font> {
            font-family: "Sora", serif;
            font-optical-sizing: auto;
-}
+           }
+        .first-img{
+          animation: first 1s ;
+        }
+        @keyframes first{
+          0%{
+            
+
+          }
+          50%{
+            transform:scale(2);
+            border-radius: 50%;
+
+          }
+          100%{
+            transform: rotate(180deg) ;
+            border-radius: 50%;
+          }
+        }
       </style>
 </head>
 <body class="sora-cmn-font">
     <!--Header section-->
-    <header class="md:container mx-auto">
-        <!--Nav Bar-->
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Product</a></li>
-                      <li><a>Services</a></li>
-                      <li><a>Contract Us</a></li>
-                    </ul>
-                  </div>
-                  <a> <img src="./c2-assets/logo-header.png" alt="" class="w-40 h-16"></a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Product</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Contract Us</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end space-x-4">
-                  <i class="fa-light fa-cart-shopping text-black"></i>
-                  <i class="fa-light fa-magnifying-glass"></i>
-                  <a class="btn text-cmn-color-1 border-cmn-color-1">Login</a>
-                  <a class="btn text-white bg-cmn-color-1">Register</a>
-                </div>
-              </div>
+    <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF] md:container mx-auto">
+       <!--Nav Bar-->
+       <nav>
+        <div class="navbar bg-base-100 flex justify-between">
+          <div class="lg:flex-1">
+            <div class="navbar-start">
+              <a><img src="./c2-assets/logo-header.png" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex ">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contract Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end hidden lg:flex gap-4 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <a class="btn text-cmn-color-1 border-cmn-color-1">Login</a>
+              <a class="btn bg-cmn-color-1 text-white">Register</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow absolute -right-3">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contract Us</a></li>
+            </ul>
+          </div>
+        </div>
+       </nav>
+      
+       <!--Banner-->
+       <section>
+        <div class="hero  min-h-screen">
+          <div class="hero-content text-center">
+            <div class="max-w-md">
+              <h1 class="text-5xl font-bold">Freshness <span class="text-cmn-color-1">You Can Count</span>On, Prices You’ll Love!</h1>
+              <p class="py-6 text-cmn-color-2">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+              <img src="./c2-assets/hero-vegetables.png " alt="" class="first-img w-[1031px] ">
+              
+            </div>
+          </div>
+        </div>
 
-        </nav>
-        <!--Banner-->
-        <section>
-
-        </section>
+       </section>
+        
     </header>
+        
     <!--Main section-->
     <main>
         <!--Section=1-->
