@@ -11,8 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <!--Awesome CDN-->
-    <script src="https://kit.fontawesome.com/4626da8439.js" crossorigin="anonymous"></script>
     <!--For customation-->
     <script>
         tailwind.config = {
@@ -22,6 +20,8 @@
                 clifford: '#da373d',
                 'cmn-color-1': '#179800',
                 'cmn-color-2': '#111111',
+                'cmn-color-3': '#EFEBE3',
+                
               }
             }
           }
@@ -103,7 +103,6 @@
           </div>
         </div>
        </nav>
-      
        <!--Banner-->
        <section>
         <div class="hero  min-h-screen">
@@ -117,14 +116,58 @@
           </div>
         </div>
 
-       </section>
-        
-    </header>
-        
+       </section>    
+    </header>   
     <!--Main section-->
     <main>
         <!--Section=1-->
-        <section></section>
+        <section class="md:container mx-auto ">
+          <h1 class="text-4xl text-cmn-color-1">Services</h1>
+          <div class="flex justify-center">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <!--section=1-card=1-->
+              <div class="card bg-base-100 w-96 shadow-xl bg-cmn-color-3">
+                <figure class="px-10 pt-10">
+                  <div class="avatar rounded-full bg-white p-4">
+                    <img src="./c2-assets/service.png"alt=""class="rounded-xl" />
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">24/7 Services </h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+              </div>
+    
+              <!--section=1-card=2-->
+              <div class="card bg-base-100 w-96 shadow-xl bg-cmn-color-3">
+                <figure class="px-10 pt-10">
+                  <div class="avatar rounded-full bg-white p-4">
+                    <img src="./c2-assets/delivery.png"alt=""class="rounded-xl" />
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Fast Delivery</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+              </div>
+              
+              <!--section=1-card=3-->
+                <div class="card bg-base-100 w-96 shadow-xl bg-cmn-color-3">
+                  <figure class="px-10 pt-10">
+                    <div class="avatar rounded-full bg-white p-4">
+                      <img src="./c2-assets/healthy.png"alt=""class="rounded-xl" />
+                    </div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Healthy Products </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          
+        </section>
         <!--Section=2-->
         <section></section>
         <!--Section=3-->
