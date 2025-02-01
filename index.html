@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!--Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/4626da8439.js" crossorigin="anonymous"></script>
     <!--For customation-->
     <script>
         tailwind.config = {
@@ -119,14 +121,14 @@
        </section>    
     </header>   
     <!--Main section-->
-    <main>
+    <main class="my-6 space-y-14">
         <!--Section=1-->
-        <section class="md:container mx-auto ">
+        <section class="md:container mx-auto space-y-8 ">
           <h1 class="text-4xl text-cmn-color-1">Services</h1>
           <div class="flex justify-center">
             <div class="flex flex-col lg:flex-row gap-6">
               <!--section=1-card=1-->
-              <div class="card bg-base-100 w-96 shadow-xl bg-cmn-color-3">
+              <div class="card bg-base-100 w-80 shadow-xl bg-cmn-color-3">
                 <figure class="px-10 pt-10">
                   <div class="avatar rounded-full bg-white p-4">
                     <img src="./c2-assets/service.png"alt=""class="rounded-xl" />
@@ -139,7 +141,7 @@
               </div>
     
               <!--section=1-card=2-->
-              <div class="card bg-base-100 w-96 shadow-xl bg-cmn-color-3">
+              <div class="card bg-base-100 w-80 shadow-xl bg-cmn-color-3">
                 <figure class="px-10 pt-10">
                   <div class="avatar rounded-full bg-white p-4">
                     <img src="./c2-assets/delivery.png"alt=""class="rounded-xl" />
@@ -152,7 +154,7 @@
               </div>
               
               <!--section=1-card=3-->
-                <div class="card bg-base-100 w-96 shadow-xl bg-cmn-color-3">
+                <div class="card bg-base-100 w-80 shadow-xl bg-cmn-color-3">
                   <figure class="px-10 pt-10">
                     <div class="avatar rounded-full bg-white p-4">
                       <img src="./c2-assets/healthy.png"alt=""class="rounded-xl" />
@@ -169,13 +171,53 @@
           
         </section>
         <!--Section=2-->
-        <section></section>
         <!--Section=3-->
-        <section></section>
+        <section class="md:container mx-auto space-y-12 ">
+          <h1 class="text-4xl font-semibold">Arrival & Offers</h1>
+          <!--section=2 cards-->
+          <div class="flex flex-col lg:flex-row gap-5">
+            <!--section=2 cards=1-->
+            <div class="card card-side bg-base-100 shadow-xl lg:w-[780px] lg:h-[300px] bg-green-900 ">
+              <div class="card-body space-y-7">
+                <img src="./c2-assets/dawat-logo.png" alt="" class="w-[247px] h-[76px]">
+                <h2 class="card-titlen text-white bg-green-600 rounded-xl p-4">Cook Exotic Dishes</h2>
+                <p class="text-2xl text-white">UP to <span class="font-semibold">20% OFF</span></p>
+              </div>
+              <figure>
+                <img src="./c2-assets/dawat-mock-up.png" class="w-[324px] h-[260px]" />
+              </figure>
+            </div>
+             <!--section=2 cards=2-->
+             <div class="card card-side bg-base-100 shadow-xl lg:w-[520px] lg:h-[300px] bg-blue-900">
+              <div class="card-body space-y-4">
+                <img src="./c2-assets/india-gate-logo.png" alt="" class="w-[94px] h-[128px]">
+                <h2 class="card-titlen text-white bg-blue-600 rounded-xl p-4">World’s No.1 Rice</h2>
+                <p class="text-2xl text-white">UP to <span class="font-semibold">40% OFF</span></p>
+              </div>
+              <figure>
+                <img
+                  src="./c2-assets/india-gate-mock-up.png" class="w-[176px] h-[260px]" />
+              </figure>
+            </div>
+          </div>
+        </section>
         <!--SEction=4-->
-        <section></section>
-        <!--Section=5-->
-        <section></section>
+        <section class="md:container mx-auto ">
+          <div class="hero bg-cmn-color-3 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="./c2-assets/vegetable-busket.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div class=" space-y-4">
+                <h1 class="text-5xl font-bold">Get Grocery News!</h1>
+                <p >Exclusive training tips, ticks, product deals and more.</p>
+                <div class="form-control"><input type="email" placeholder="Email" class="input input-bordered" required /></div>
+                <button class="btn btn-primary bg-cmn-color-1 border-cmn-color-1">Subscribe</button>
+              </div>
+            </div>
+          </div>
+         
+
+        </section>
     </main>
     <!--Footer section-->
     <footer></footer>
